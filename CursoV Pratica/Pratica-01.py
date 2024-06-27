@@ -30,3 +30,4 @@ num1 =  input('Digite o primeiro número da soma:')
 num2 =  input('Digite o segundo número da soma:')
 soma =  int(num1) + int(num2)                       #USO DO INT PRA FAZER A STR DO NÚMERO SE TORNAR UM VALOR INT S0MÁVEL
 print('A soma destes números é:',soma)
+
