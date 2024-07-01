@@ -41,8 +41,8 @@ print(f'A soma entre {num1} e {num2} é igual a {soma}')
 5 - 2 == 3
 5 * 2 == 10
 5 / 2 == 2.5
-5 ** 2 == 25
-5 // 2 == 2  # RESTA 1 DA DIVISÃO, na divisão inteira não tem resto, e o resultado nunca é float
+5 ** 2 ==25
+5 // 2 ==2  # RESTA 1 DA DIVISÃO, na divisão inteira não tem resto, e o resultado nunca é float
 
 5 % 2 == 1  # O RESTO VEM PRA CA
 
