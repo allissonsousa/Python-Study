@@ -2,4 +2,4 @@
 
 p = float(input('Digite aqui o preço do produto:'))
 np = p - (p * 5 / 100)
-print(f'O preço deste produto com desconto será: {np:.2f}')
+print(f'O preço deste produto com desconto será: R${np:.2f}')

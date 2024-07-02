@@ -37,14 +37,15 @@ print(f'A soma entre {num1} e {num2} é igual a {soma}')
 # Operações aritiméticos
 # operadores   + adição, - subtração, *multiplicação, / divisão, ** potência, // divisão inteira, % resto da divisão
 
+'''
 5 + 2 == 6
 5 - 2 == 3
 5 * 2 == 10
 5 / 2 == 2.5
 5 ** 2 ==25
-5 // 2 ==2  # RESTA 1 DA DIVISÃO, na divisão inteira não tem resto, e o resultado nunca é float
+5 // 2 ==2 RESTA 1 DA DIVISÃO, na divisão inteira não tem resto, e o resultado nunca é float
 
-5 % 2 == 1  # O RESTO VEM PRA CA
+5 % 2 == 1   O RESTO VEM PRA CA'''
 
 # Ordem de precedência: 1-(), 2-**, 3- * / % //, 4_ + -
 
@@ -65,3 +66,5 @@ di = n1 // n2
 e = n1 ** n2
 print(f'A soma é {s} e a \n divisão é {m:.3f}', end='')  # \n é a quebra de linha de um print, e end= é pra conectar os
 print(f'Divisão inteira {di} e potência {e}')  # os dois prints
+
+
