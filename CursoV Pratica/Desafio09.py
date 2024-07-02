@@ -1,5 +1,6 @@
 # Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada
 
+# FORMA COMO FIZ
 num = int(input('Digite um número inteiro:'))
 n0 = num * 0
 n1 = num * 1
@@ -25,3 +26,19 @@ print(f'TABUADA:\n'
       f'8 X {num} = {n8}\n'
       f'9 X {num} = {n9}\n'
       f'10 X {num} = {n10}\n')
+
+# COMO PODE SER FEITO USANDO  MENOS MEMÓRIA
+n = int(input('Digite um número para ver sua tabuada:'))
+print('_' * 12)
+print(f'Tabuada\n'
+      f'{n} x 1 = {n * 1}\n'
+      f'{n} x 2 = {n * 2}\n'
+      f'{n} x 3 = {n * 3}\n'
+      f'{n} x 4 = {n * 4}\n'
+      f'{n} x 5 = {n * 5}\n'
+      f'{n} x 6 = {n * 6}\n'
+      f'{n} x 7 = {n * 7}\n'
+      f'{n} x 8 = {n * 8}\n'
+      f'{n} x 9 = {n * 9}\n'
+      f'{n} x 10 = {n * 10}\n')
+print('_' * 12)
