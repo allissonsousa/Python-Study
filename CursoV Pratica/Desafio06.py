@@ -1,11 +1,11 @@
 # Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada
-import math
+from math import sqrt
 
 # COMO EU FIZ
 num = int(input('Digite um número:'))
 numx2 = num * 2
 numx3 = num * 3
-numxx2 = math.sqrt(num)
+numxx2 = sqrt(num)
 
 print(f'O dobro deste número é: {numx2}'
       f' \nO triplo desse número é: {numx3} \nA raiz quadrada desse número é: {numxx2:.2f}')
