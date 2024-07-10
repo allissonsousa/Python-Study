@@ -3,3 +3,4 @@
 from math import floor
 num = float(input('Digite um número real:'))
 print(f'A porção inteira de {num} é {floor(num)}')
+# floor() mostra a parte inteira de um numero float, pode ser subistituido pelo .trunc() ou int()
