@@ -9,7 +9,7 @@ print(frase[9:21:2])
 # Resulta no print do nono ao vigesimo caractere, porem com um gap de um em um digitos ex = babacao >> b_b_c_o
 print(frase[:5])  # Omissão do primeiro caractere, logo começa desde o primeiro digito da string
 print(frase[15:])  # Omissão do ultimo caractere, logo começa no 15° e vai ate o ultimo digito da string
-print(frase[9::3])  # Comça no nove até o final, porem pulando de 3 em 3 caracteres >>> i g b
+print(frase[9::3])  # Começa no nove até o final, porem pulando de 3 em 3 caracteres >>> i g b
 # Análise da string
 print(len(frase))  # Mostra a quantidade de caracteres de frase/ len >> length
 print(frase.count('o'))  # Conta quantas vezes a letra _O_ aparece na frase
