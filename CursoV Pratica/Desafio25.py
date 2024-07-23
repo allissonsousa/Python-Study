@@ -5,3 +5,7 @@ print(silva.replace('True', 'Você pertençe a família silva 😊').replace('Fa
 
 """ O verificador IN passa um valor em boleano confirmando se tem silva ou nao no nome, este valor é transformado em 
 string, e essas strings sao transformadas com o replace"""
+
+# OUTRA FORMA DE SER FEITO
+name = str(input('QUal é o seu nome completo?')).strip()
+print('Seu nome tem silva ? {}'.format('silva' in name.lower()))
