@@ -13,9 +13,10 @@ n7 = num * 7
 n8 = num * 8
 n9 = num * 9
 n10 = num * 10
-
-print(f'TABUADA:\n'
-      f'0 X {num} = {n0}\n'
+print('\033[34m=_=\033[m' * 12)
+print(f'TABUADA: ')
+print(f'\033[34m=_=\033[m' * 12)
+print(f'0 X {num} = {n0}\n'
       f'1 X {num} = {n1}\n'
       f'2 X {num} = {n2}\n'
       f'3 X {num} = {n3}\n'

@@ -3,5 +3,5 @@
 num1 = int(input('Digite o primer número da soma:'))
 num2 = int(input('Digite o segundo número da soma:'))
 soma = num1+num2
-print(f'A soma entre {num1} e {num2} é {soma}')
+print(f'A soma entre \033[32m{num1}\033[m e \033[33m{num2}\033[m é \033[35m{soma}')
 

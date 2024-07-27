@@ -7,8 +7,9 @@ numx2 = num * 2
 numx3 = num * 3
 numxx2 = sqrt(num)
 
-print(f'O dobro deste número é: {numx2}'
-      f' \nO triplo desse número é: {numx3} \nA raiz quadrada desse número é: {numxx2:.2f}')
+print(f'O \033[31mdobro\033[m deste número é: {numx2}'
+      f' \nO \033[32mtriplo\033[m desse número é: {numx3}'
+      f' \nA \033[34mraiz\033[m quadrada desse número é: {numxx2:.2f}')
 
 # OUTRA FORMA DE SER FEITO
 n = int(input('Digite aqui um número:'))
