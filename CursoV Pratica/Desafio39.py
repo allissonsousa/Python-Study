@@ -7,8 +7,7 @@ Seu programa tambem deve mostrar o tempo que falta ou passou do prazo
 from datetime import date
 print('Receba aqui informações sobre o seu alistamento militar.')
 ano = int(input('Digite aqui o seu ano de nascimento: '))
-data = date.today()  # pega a data atual
-hoje = data.year  # pega so o ano da data atual
+hoje = date.today().year  # pega so o ano da data atual
 idade = hoje - ano
 if idade < 18:
     print('Você é muito jovem, ainda não é hora de se alistar.')

@@ -12,3 +12,4 @@ if mens > (sal * 30 / 100):  # calcula se a parcela é maior que 30% do salário
 else:
     print(f'Parabéns o seu empréstimo foi APROVADO, você deverá pagar {prest} parcelas mensais de R${mens:.2f}')
 print('Obrigado por nos consultar, tenha um bom dia!')
+
