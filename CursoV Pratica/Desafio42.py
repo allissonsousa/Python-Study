@@ -20,3 +20,17 @@ if l1 + l2 > l3 and l1 + l3 > l3 and l2 + l3 > l1:
 else:
     print('Com essas medidas não é possivel formar um triângulo!!')
 
+# CORREÇÃO
+
+# inputs iguais
+# poderia ter usado um if dentro de outro bloco if (CONDIÇÃO ANINHADA)
+if l1 + l2 > l3 and l1 + l3 > l3 and l2 + l3 > l1:
+    print(f'Com essas medidas voce pode construir um triângulo {tri}!!!')
+    if l1 == l2 == l3:  # uso do if dentro de outro bloco, e uso do == == duas vezes pq o python permite
+        tri = 'Equilatero'
+    elif l1 != l2 != l3 != l1:    # o pyhton permite o mesmo com o != !=
+        tri = 'Escaleno'
+    else:  # era só deixar o Isoceles no else que eu não precisaria fazer as comparações dos lados BURRO
+        tri = 'Isoceles'
+else:
+    print('Com essas medidas não é possivel formar um triângulo!!')

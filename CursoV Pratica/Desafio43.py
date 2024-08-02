@@ -9,7 +9,7 @@ a tabela abaixo:
 print('Vamos calcular o seu IMC (Indíce de Massa Corporal)!')
 peso = float(input('Qual o seu peso atual em kilos ? '))
 altura = float(input('Qual a sua altura em metros ? '))
-imc = peso / (altura * altura)
+imc = peso / (altura * altura)  # ou (altura ** 2)
 est = ''
 if imc < 18.5:
     est = 'Abaixo do peso'
@@ -21,4 +21,19 @@ elif (imc < 40) and imc > 30:
     est = 'Obesidade'
 elif imc > 40:
     est = 'Obesidade morbida'
-print(f'De acordo com a tabela de classificação, seu imc de {imc:.2f}, é categorizado como {est} !!')
+print(f'De acordo com a tabela de classificação, seu imc de {imc:.1f}, é categorizado como {est} !!')
+
+# CORREÇÃO
+# Simplificação dos teste
+
+if imc < 18.5:
+    est = 'abaixo do peso'
+elif 18.5 >= imc < 25:  # Python é foda, aceita até comparação com essa formatação
+    est = 'Peso normal'
+elif 25 <= imc < 30:
+    est = 'Sobrepeso'
+elif 30 <= imc < 40:
+    est = 'Obesidade'
+else:
+    est = 'Obesidade morbida'
+print(f'De acordo com a tabela de classificação, seu imc de {imc:.1f}, é categorizado como {est} !!')
