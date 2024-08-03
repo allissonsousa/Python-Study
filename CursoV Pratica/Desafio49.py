@@ -1,0 +1,1 @@
+"""Refaça o exercício 09, mostrando o número qe ousuário escolher, só que agora utilizando laço for"""

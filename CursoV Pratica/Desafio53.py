@@ -1,0 +1,2 @@
+"""Crie um programa que leia uma frase qualquer e diga se ela é um palindromo, desconsidere os acentos e espaços
+Palindromo: palavras q sao o mesmo de tras pra frente e de frente pra traz, ex = subi no onibus"""
