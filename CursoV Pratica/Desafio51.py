@@ -5,3 +5,11 @@ r = int(input('Digite aqui a razão da sua progreção aritimética: '))
 gap = r * 10 + p
 for i in range(p, gap, r):
     print(i)
+
+# CORREÇÃO
+pri = int(input('Primeiro termo: '))
+raz = int(input('Razão: '))
+dec = pri + (10-1) * raz
+for i in range(pri, dec+raz, raz):
+    print(i, end=' --> ')
+print('Fim')
