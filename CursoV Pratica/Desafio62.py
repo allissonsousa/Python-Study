@@ -6,6 +6,8 @@ per = 0
 qua = 10
 pa = pri + (qua * ra)
 termo = pri
+print('Estes são os primeiros 10 termos da sua PQ')
+print(pri)
 while termo != pa:
     termo += ra
     if termo == pa:
@@ -16,5 +18,4 @@ while termo != pa:
         else:
             break
     print(termo)
-
 print(f'Estes são so {qua} primeiros termos da sua PA!')

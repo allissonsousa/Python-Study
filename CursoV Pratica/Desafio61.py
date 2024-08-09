@@ -4,6 +4,7 @@ pri = int(input('Digite aqui o primeiro termo da sua PA: '))
 ra = int(input('Digite aqui a razão da sua PA: '))
 pa = pri + (10 * ra)
 termo = pri
+print(f'Estes são os primeiros 10 termos da sua PROGRESSÃO ARITIMÉTICA: ')
 while termo != pa:
     termo += ra
     print(termo)
