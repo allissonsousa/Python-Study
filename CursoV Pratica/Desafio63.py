@@ -12,6 +12,6 @@ while n != cont:
     if ac > 0:
         n1 = n2
         n2 = ac
-    print(ac)
+    print(ac, end=' >> ')
 
 

@@ -14,8 +14,27 @@ while termo != pa:
         per = int(input('Quantos termos a mais voce deseja mostrar? '))
         if per != 0:
             qua += per
-            pa = pri + qua * ra
+            pa = pri + qua * ra     #tenho q começar a usar nomes semanticos pras variaveis urgente
         else:
             break
     print(termo)
 print(f'Estes são so {qua} primeiros termos da sua PA!')
+
+# CORREÇÃO
+print('Gerador de PA')
+print('-=-' * 20)
+pri = int(input('Primeiro termo: '))
+raz = int(input('Razão da PA: '))
+cont = 1
+termo = pri
+total = 0
+mais = 10
+while mais != 0:
+    total += mais
+    while cont <= total:
+        print(termo, ' >> ', end='')
+        termo += raz
+        cont += 1
+    print('PAUSA')
+    mais = int(input('Quantos termos você quer mostrar a mais ?'))
+print('FIM')

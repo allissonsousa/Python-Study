@@ -30,3 +30,39 @@ while op != 5:
             res = n2
             print('Maior =', res)
 print('Fim do programa!!!')
+
+# CORREÇÃO
+num1 = int(input('Primeiro valor: '))
+num2 = int(input('Segundo valor: '))
+opc = 0
+while opc != 5:
+    print('''
+    [1] Somar
+    [2] Multiplicar
+    [3] Maior
+    [4] Novos Números
+    [5] Sair do programa
+    ''')
+    opc = int(input('Qual a sua opção? '))
+    if opc == 1:
+        soma = num1 + num2
+        print(f'A soma entre  {num1} e {num2} é {soma}')
+    elif opc == 2:
+        prod = num1 * num2
+        print(f'A multiplicação entre {num1} e  {num2} é {prod}')
+    elif opc == 3:
+        if num1 > num2:
+            maior = num1
+        else:
+            maior = num2
+        print(f'O maior valor entre {num1} e {num2} é {maior}')
+    elif opc == 4:
+        print('Informe os números novamente!')
+        num1 = int(input('´Primeiro número: '))
+        num2 = int(input('Segundo número: '))
+    elif opc == 5:
+        print('Finalizando...')
+    else:
+        print('Opção invalida. Tente novamente')
+    print('=-=' * 23)
+opc = int(input('Qual a sua opção?'))
