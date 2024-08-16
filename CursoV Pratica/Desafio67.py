@@ -1,2 +1,5 @@
-"""Faça um programa que mostre a tabuada de varios números, um de cada vez, para cada valor difitado pelo usuário
+"""Faça um programa que mostre a tabuada de varios números, um de cada vez, para cada valor digitado pelo usuário
 O programa sera interrompido quando o  número solicitado foi negativo"""
+print('-=-' * 23)
+
+print('-=-' * 23)
