@@ -6,11 +6,45 @@ print('=' * 60)
 print('CAIXA ELETRONICO'.center(60, ' '))
 print('=' * 60)
 valor = int(input('Qual o valor que deseja sacar? R$'))
-cinquenta = 0
-vinte = 0
-dez = 0
-um = 0
-if valor >= 50:
+cinquenta = um = vinte = dez =0
+valores = [50, 20, 10, 1]
+while valor != 0:
+    for i in valores:
+        if valor > i:
+            if i == 50:
+                cinquenta += valor // i
+                valor = valor % i
+
+
+if cinquenta != 0:
+    print(f'Total de {cinquenta} cédulas de cinquenta')
+if vinte != 0:
+    print(f'Total de {vinte } cédulas de vinte')
+if dez != 0:
+    print(f'Total de {dez} cédulas de dez')
+if um != 0:
+    print(f'Total de {um} cédulas de um')
+print('==' * 30)
+print('Volte sempre ao banco do Alinho'.center(60, ' '))
+
+# Vou tentar simplificar
+valores = [50, 20, 10, 1]
+while True:
+    for i in valores:
+        if i > valor:
+            if i == 50:
+                cinquenta = valor // i
+                valor = valor % i
+            elif i == 20:
+                vinte = valor // i
+                valor = valor % i
+            elif i == 10:
+                dez = valor // i
+                valor = valor % i
+            elif i == 1:
+                um = valor // 1
+
+"""if valor >= 50:
     cinquenta = valor // 50
     resto = valor % 50
     if resto < 50:
@@ -35,15 +69,5 @@ elif valor >= 10:
     if resto < 10:
         um = resto
 else:
-    um = valor
+    um = valor"""
 
-if cinquenta != 0:
-    print(f'Total de {cinquenta} cédulas de cinquenta')
-if vinte != 0:
-    print(f'Total de {vinte } cédulas de vinte')
-if dez != 0:
-    print(f'Total de {dez} cédulas de dez')
-if um != 0:
-    print(f'Total de {um} cédulas de um')
-print('==' * 30)
-print('Volte sempre ao banco do Alinho'.center(60, ' '))
