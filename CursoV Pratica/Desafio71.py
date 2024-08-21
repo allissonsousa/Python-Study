@@ -28,14 +28,38 @@ while valor != 0:       # valor vai ser o resto das divisões que serão feitas
 
 
 if cinquenta != 0:
-    print(f'Total de {cinquenta} cédulas de cinquenta')
+    print(f'Total de {cinquenta} cédulas de R$50,00')
 if vinte != 0:
-    print(f'Total de {vinte } cédulas de vinte')
+    print(f'Total de {vinte } cédulas de R$20,00')
 if dez != 0:
-    print(f'Total de {dez} cédulas de dez')
+    print(f'Total de {dez} cédulas de R$10,00')
 if um != 0:
-    print(f'Total de {um} cédulas de um')
+    print(f'Total de {um} cédulas de R$1,00')
 print('==' * 30)
 print('Volte sempre ao banco do Alinho'.center(60, ' '))
 
 
+# CORREÇÃO
+print('=' * 30)
+print('{:^30}'.format('BANCO DO ALINHO'))
+print('=' * 30)
+val = int(input('Qual valor você deseja sacar? R$'))
+tot = val
+ced = 50
+totced = 0
+while True:
+    if tot >= ced:
+        tot -= ced
+        totced += 1
+    else:
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R$ {ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        totced = 0
+        if tot == 0:
+            break
