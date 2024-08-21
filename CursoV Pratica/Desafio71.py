@@ -6,14 +6,25 @@ print('=' * 60)
 print('CAIXA ELETRONICO'.center(60, ' '))
 print('=' * 60)
 valor = int(input('Qual o valor que deseja sacar? R$'))
-cinquenta = um = vinte = dez =0
-valores = [50, 20, 10, 1]
-while valor != 0:
-    for i in valores:
-        if valor > i:
-            if i == 50:
-                cinquenta += valor // i
-                valor = valor % i
+nota = valor
+i = 0
+cinquenta = um = vinte = dez = 0    # armazenam a quantidades de notas pra imprimir na tela posteriormente
+valores = [50, 20, 10, 1]      # notas disponiveis pra sacar
+while valor != 0:       # valor vai ser o resto das divisões que serão feitas
+    for i in valores:   # para nota na lista
+        if valor >= i:      # se a o valor for maior ou igual a nota, divide o valor por i e o resto da divisão passa a
+            nota = valor // i                                                   # a ser o novo valor
+            valor = valor % i
+            break
+
+    if i == 50:
+        cinquenta += nota
+    if i == 20:
+        vinte += nota
+    if i == 10:
+        dez += nota
+    if i == 1:
+        um += nota
 
 
 if cinquenta != 0:
@@ -27,47 +38,4 @@ if um != 0:
 print('==' * 30)
 print('Volte sempre ao banco do Alinho'.center(60, ' '))
 
-# Vou tentar simplificar
-valores = [50, 20, 10, 1]
-while True:
-    for i in valores:
-        if i > valor:
-            if i == 50:
-                cinquenta = valor // i
-                valor = valor % i
-            elif i == 20:
-                vinte = valor // i
-                valor = valor % i
-            elif i == 10:
-                dez = valor // i
-                valor = valor % i
-            elif i == 1:
-                um = valor // 1
-
-"""if valor >= 50:
-    cinquenta = valor // 50
-    resto = valor % 50
-    if resto < 50:
-        vinte = resto // 20
-        resto = resto % 20
-        if resto < 20:
-            dez = resto // 10
-            resto = resto % 10
-            if resto < 10:
-                um = resto
-elif valor >= 20:
-    vinte = valor // 20
-    resto = valor % 20
-    if resto < 20:
-        dez = resto // 10
-        resto = resto % 10
-        if resto < 10:
-            um = resto
-elif valor >= 10:
-    dez = valor // 10
-    resto = valor % 10
-    if resto < 10:
-        um = resto
-else:
-    um = valor"""
 
