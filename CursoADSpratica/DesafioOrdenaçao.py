@@ -9,14 +9,12 @@ def ordenada(num):
     menor = []
     for i in range(0, len(num)):
         alist.append(int(num[i]))
-    print(alist)
-
     for i in range(-1, len(alist)):
         termo = alist[i]
         for c in range(0, len(alist)):
             if alist[c] > termo:
                 termo = alist[c]
-                menor.append(termo)
+            menor.append(termo)
             print(menor)
 
 
