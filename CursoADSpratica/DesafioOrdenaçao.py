@@ -4,22 +4,29 @@ ordenada = 0 2 3 8 9"""
 
 
 def ordenada(num):
-    termo = 0
     alist = []
-    menor = []
-    for i in range(0, len(num)):
+    size = len(num)
+    for i in range(0, size):
         alist.append(int(num[i]))
-    for i in range(-1, len(alist)):
-        termo = alist[i]
-        for c in range(0, len(alist)):
-            if alist[c] > termo:
-                termo = alist[c]
-            menor.append(termo)
-            print(menor)
+    for i in range(0, size):
+        minimo = i
+        for c in range(0, size):
+            if alist[i] >= alist[c]:
+                minimo = c
+            (alist[i], alist[minimo]) = (alist[minimo], alist[i])
+    return alist
 
 
-
-
-
-numero = '34520'
+numero = '567281023'
 print(ordenada(numero))
+
+# OUTRA FORMA MAIS SIMPLES DE SER FEITO::
+def ordem(n):
+    list = []
+    for i in range(0, len(n)):
+        list.append(n[i])
+    return sorted(list)
+
+
+num = str(input('numero'))
+print(ordem(num))
