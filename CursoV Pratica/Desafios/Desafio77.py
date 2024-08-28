@@ -3,7 +3,7 @@ cada palavra, quais são as suas vogais"""
 tulipa = ('Panda', 'Mercado', 'Pedra', 'Comercial', 'Mexirica', 'Corda', 'Motocross', 'Roupas')
 for i in range(0, len(tulipa)):
     palavra = str(tulipa[i])
-    print(palavra)
+    print(f'\n{palavra}')
     for c in range(0, len(palavra)):
         if palavra[c] in 'AaEeIiOoUu':
-            print(palavra[c])
+            print(palavra[c], end=' ')
