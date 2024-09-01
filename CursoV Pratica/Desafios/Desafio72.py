@@ -10,3 +10,5 @@ while True:
         break
     else:
         num = int(input('Digite um número de 0 a 20 para ver sua escrita por extenso: '))
+
+# CORREÇÃO

@@ -19,3 +19,11 @@ for i in range(0, len(tulipa)):
 print(f'A tupla gerada aleatoriamente é : {tuple(tulipa)}')
 print(f'O maior valor desta tupla é o número {maior}')
 print(f'O menor valor desta tupla é o  número {menor}')
+
+
+# CORREÇÃO
+
+tupla = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+print(f'Os valores sorteados foram: {tupla}')
+print(f'O maior valor sorteado foi {max(tupla)}')
+print(f'O menor valor sorteado foi {min(tupla)}')
