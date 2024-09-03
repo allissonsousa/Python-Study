@@ -7,3 +7,12 @@ for i in range(0, len(tulipa)):
     for c in range(0, len(palavra)):
         if palavra[c] in 'AaEeIiOoUu':
             print(palavra[c], end=' ')
+
+
+# CORREÇÃO
+palavras = ('Panda', 'Mercado', 'Pedra', 'Comercial', 'Mexirica', 'Corda', 'Motocross', 'Roupas')
+for p in palavras:
+    print(f'\nNa palavra {p}, temos: ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
