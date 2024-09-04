@@ -22,7 +22,7 @@ vals.append(7)
 for v in vals:
     print(f'{v} ...')
 
-for c, v in enumerate(vals):
+for c, v in enumerate(vals):            # c é posição do elemento V
     print(f'Na posição {c} encontrei o valor {v}')
 
 a = [2, 3, 4, 7]
