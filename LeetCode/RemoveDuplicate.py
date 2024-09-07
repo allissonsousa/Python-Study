@@ -1,4 +1,5 @@
 """ Remover elementos duplicados de uma lista"""
+"""Fazer o código com listas linkadas"""
 
 
 def removeDuplicado(lis):
