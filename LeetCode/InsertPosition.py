@@ -14,7 +14,6 @@ def InsertPosition(nums, target):
         return nums.index(target)
 
 
-
 lista = [1, 2, 3, 7]
 objetivo = 5
 print(InsertPosition(lista, objetivo))

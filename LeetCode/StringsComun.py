@@ -1,0 +1,1 @@
+"""Quantas maneiras possiveis pode-se subir x quantidades de degraus, sendo que ou voce avança um degrau ou dois"""
