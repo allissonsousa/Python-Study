@@ -12,4 +12,22 @@ while quer == 'S':
         print('Valor repetido. Não será adicionado a lista..')
     quer = str(input('Você deseja continuar? [S/N] ')).upper().strip()[0]
 
-print(f'\nVocê digitou os valores {ls}')
+print(f'\nVocê digitou os valores {sorted(ls)}')
+
+# CORREÇÃO
+
+numeros = list()
+while True:
+    num = int(input('Digite um valor: '))
+    if num not in numeros:
+        numeros.append(num)
+        print('Valor adicionado a lista com sucesso!')
+    else:
+        print('Valor duplicado não aceito! ')
+    r = str(input('Quer continuar ? [s/n] ')).strip().upper()[0]
+    if r in 'N':
+        break
+
+print('-=-' * 30)
+numeros.sort()
+print(f'Voce digitou os valores {numeros}')

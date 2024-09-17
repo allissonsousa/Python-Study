@@ -10,5 +10,9 @@ for i in range(0, len(ls)):
     for d in range(minindex, len(ls)):
         if ls[minindex] > ls[d]:
             (ls[minindex], ls[d]) = (ls[d], ls[minindex])
-print('=x=' * 20)
+print('==' * 20)
 print(f'Os valores digitados em ordem foram: {ls}')
+
+# CORREÇÃO
+
+
