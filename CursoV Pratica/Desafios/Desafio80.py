@@ -16,7 +16,7 @@ print(f'Os valores digitados em ordem foram: {ls}')
 # CORREÇÃO
 
 lista = list()
-for c in range(0,5):
+for c in range(0, 5):
     num = int(input('Digite um valor:'))
     if c == 0 or num > lista[-1]:
         lista.append(num)
