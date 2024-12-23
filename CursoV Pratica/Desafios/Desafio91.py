@@ -53,3 +53,4 @@ ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)   #itemgetter 1 
 print('-=-' * 30)
 for i, v in enumerate(ranking):
         print(f'{i + 1}° Lugar: {v[0]} com {v[1]}')
+
