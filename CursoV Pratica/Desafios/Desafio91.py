@@ -39,7 +39,11 @@ jogo = {'jogador1' : randint(1, 6),
         'jogador3' : randint(1, 6),
         'jogador4' : randint(1, 6)}
 
+#criação do dicionario pronto e estruturado
+
 ranking = list()
+
+#transformação do dicionario em lista
 
 print('Valores sorteados: ')
 for k, v in jogo.items():
@@ -49,8 +53,9 @@ for k, v in jogo.items():
 #IMPORTANTE !!!!!!
 ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)   #itemgetter 1 pega o elemento 1 do dicionario, q é o valor
                                                         # de jogador, item 0 no caso seria 'jogador', uso da chave
-
+#aqui sera ordenado os elementos na lista
+#e em seguida sera printado na nova ordem q é o ranking correto
 print('-=-' * 30)
 for i, v in enumerate(ranking):
         print(f'{i + 1}° Lugar: {v[0]} com {v[1]}')
-
+        sleep(0.7)
