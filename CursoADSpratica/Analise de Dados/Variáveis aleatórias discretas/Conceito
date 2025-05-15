@@ -1,0 +1,23 @@
+Aplicações da variáveis aleatória dicretas
+Existem funções para calcular variáveis dicretas de Bernoulli, binomial, geométrica,
+hipergeométrica e Poisson
+
+Usada em situações como:
+- Lançamento de uma moeda honesta
+- Probabilidade de chover
+- Lançamento de um dado
+- Distribuição do retorno de um ativo financeiro (continua)
+
+Primeiro deve ser calculado a funçao de probabilidade, levando em conta a probalibilidade de cada
+valor
+Ex: uma moeda
+cara tem 1/2 de probabilidade
+e coroa tem 1/2 de probabilidade
+a soma das probabilidades do mesmo caso sempre somam 1
+ex: 1/2 + 1/2 = 2/2 =  1
+
+Bernoulli é em casos de só ter dois resultados, um sendo sucesso e outro falha
+
+ex: 0 é sucesso  1 falha
+a chance de um dado ser lançado e mostrar 5
+0 = 1/6 e 1 = 5/6
