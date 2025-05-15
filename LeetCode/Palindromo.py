@@ -14,5 +14,6 @@ def isPalindrome(num):
         return False
 
 
-numeros = 121
+numeros = 31213
 print(isPalindrome(numeros))
+
