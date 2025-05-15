@@ -1,0 +1,1 @@
+Nestes arquivos estão todos os códigos e registros de estudos em python. Todo e qualquer contato que tive com a linguagem desde o mais simples ao mais complexo estão reunidos nessa galeria de códigos.
