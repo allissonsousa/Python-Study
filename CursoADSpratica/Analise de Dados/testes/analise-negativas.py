@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Caminho para a pasta onde estão os arquivos .xlsx
-pasta = "Este Computador/Documentos/2018"
+pasta = r"C:\Users\allisson.avila\Documents\2018"
 
 # Lista para armazenar os DataFrames
 todas_planilhas = []
