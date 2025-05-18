@@ -16,10 +16,10 @@ import scipy.stats as stats
 #Definir a probabiliadade de sucesso (p)
 p = 0.3
 
-#Definir o número dde tentativas até o primiro sucesso(k)
+#Definir o número de tentativas até o primiro sucesso(k)
 k = 5
 
 #Calcular a probabilidade de x=k usando a funçao pmf da distribuição geométrica
 probabilidade = stats.geom.pmf(k,p)
 
-print(f"A probabiliade dde precisar dde exatamente {k} dardos é de {probabilidade :.2f}")
+print(f"A probabiliade de precisar de exatamente {k} dardos para acertar o alvo é de {probabilidade :.2f}")

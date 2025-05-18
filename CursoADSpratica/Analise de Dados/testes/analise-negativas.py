@@ -1,8 +1,10 @@
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
+
 
 # Caminho para a pasta onde estão os arquivos .xlsx
-pasta = "Este Computador/Documentos/2018"
+pasta = r"C:\Users\allisson.avila\Documents\2018"
 
 # Lista para armazenar os DataFrames
 todas_planilhas = []
@@ -20,3 +22,19 @@ df_unido = pd.concat(todas_planilhas, ignore_index=True)
 
 # Salvar em uma nova planilha
 df_unido.to_excel("planilha_unificada.xlsx", index=False)
+df = pd.read_excel("planilha_unificada.xlsx")
+new = pd.read_excel("planilha_unificada.xlsx", header= None, usecols= [12])
+
+
+contagem = new.value_counts()
+
+contagem.index = contagem.index.map(lambda x: str(x[0])[:3])
+
+contagem.plot(kind = 'bar', color = 'skyblue')
+
+ax = contagem.plot(kind = 'bar', color = 'skyblue')
+ax.bar_label(ax.containers[0], fontsize=8, label_type='edge')
+plt.xticks(rotation = 90)
+plt.xticks(size = 10)
+plt.tight_layout()
+plt.show()
