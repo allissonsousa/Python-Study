@@ -17,10 +17,10 @@ usar lambda == 1/2"""
 from scipy.stats  import expon
 
 #definir a media lambda
-lambda_ = 1/2
+lambda_ = 1/24
 
 #calcular a probabilidade com scipy
-prob = expon.cdf(3, scale = 1/lambda_)
+prob = expon.cdf(12, scale = 1/lambda_)
 
 #exibir resultado
 print(prob)

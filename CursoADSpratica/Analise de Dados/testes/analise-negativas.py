@@ -2,9 +2,9 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 
-
 # Caminho para a pasta onde estão os arquivos .xlsx
-pasta = r"C:\Users\allisson.avila\Documents\2018"
+# codigo geral para unir planilhas excel
+"""pasta = r""
 
 # Lista para armazenar os DataFrames
 todas_planilhas = []
@@ -21,7 +21,7 @@ for arq in os.listdir(pasta):
 df_unido = pd.concat(todas_planilhas, ignore_index=True)
 
 # Salvar em uma nova planilha
-df_unido.to_excel("planilha_unificada.xlsx", index=False)
+df_unido.to_excel("planilha_unificada.xlsx", index=False)"""
 df = pd.read_excel("planilha_unificada.xlsx")
 new = pd.read_excel("planilha_unificada.xlsx", header= None, usecols= [12])
 
@@ -37,4 +37,5 @@ ax.bar_label(ax.containers[0], fontsize=8, label_type='edge')
 plt.xticks(rotation = 90)
 plt.xticks(size = 10)
 plt.tight_layout()
+plt.grid(True)
 plt.show()
