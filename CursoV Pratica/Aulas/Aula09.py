@@ -1,4 +1,4 @@
-# CADEIA DE TEXTO
+    # CADEIA DE TEXTO
 # Fatiamento
 frase = 'Eu sou muito legal sabia?'  # Essa string tem 12 caracteres enumerados de 0 a 11
 print(frase)  # Resulta no print total da frase
