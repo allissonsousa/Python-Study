@@ -179,8 +179,8 @@ msg=MIMEMultipart()
 texto='Este e-mail foi enviado automaticamente atravez da linguagem python'
 
 #parametros
-senha='AlIsOn214'
-msg['From']='allissonsousa7@outlook.com'
+senha='senha123'
+msg['From']='allisson@outlook.com'
 msg['To']='michellecastro.carlos@hotmail.com'
 msg['Subject']='E-mail Python Estácio'
 
@@ -671,7 +671,7 @@ if __name__ == '__main__':
         self.raio=raio
 '''
 #No entanto, conforme mencionamos, é necessário controlar a quantidade
-    # de círculos criados.o codigo encima vira esse debaixo
+    # de círculos criados.o codigo acima vira esse de abaixo
 
 class Circulo():
     _total_circulos=0
