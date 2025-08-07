@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Caminho para a pasta onde estão os arquivos .xlsx
 # codigo geral para unir planilhas excel
-"""pasta = r""
+pasta = "C:\Users\allisson.avila\Documents\GitHub\Python-Study\CursoADSpratica\Analise de Dados\testes"
 
 # Lista para armazenar os DataFrames
 todas_planilhas = []
@@ -21,7 +21,7 @@ for arq in os.listdir(pasta):
 df_unido = pd.concat(todas_planilhas, ignore_index=True)
 
 # Salvar em uma nova planilha
-df_unido.to_excel("planilha_unificada.xlsx", index=False)"""
+df_unido.to_excel("planilha_unificada.xlsx", index=False)
 df = pd.read_excel("planilha_unificada.xlsx")
 new = pd.read_excel("planilha_unificada.xlsx", header= None, usecols= [12])
 
