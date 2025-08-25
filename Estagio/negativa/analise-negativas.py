@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Caminho para a pasta onde estão os arquivos .xlsx
 # codigo geral para unir planilhas excel
-pasta = "C:\Users\allisson.avila\Documents\GitHub\Python-Study\CursoADSpratica\Analise de Dados\testes"
+pasta = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\negativa"
 
 # Lista para armazenar os DataFrames
 todas_planilhas = []
