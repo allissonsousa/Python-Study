@@ -11,7 +11,7 @@ from openpyxl import Workbook  #IMPORTAÇÃO DA CLASSE WORKBOOK
 import os
 import pandas as pd
 
-pasta = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Testes\UniaoDeAbasXLSX\arqUnir"
+pasta = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\UniaoDeAbasXLSX\arqUnir"
 
 pastatrabalho = Workbook()
 # Lista para armazenar os DataFrames

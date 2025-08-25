@@ -2060,4 +2060,4 @@ if __name__=='__main__':
 #4Limpeza de dados = complementação de dados ausentes, detecção de ruídos e eliminação de dados inconsistentes.
 
 #5A partição dos dados = separação dos dados em dois conjuntos disjuntos. Um para abstração do modelo e conhecimento e
-# outra para negativa, avalição do modelo gerado
+# outra para UniaoEmPlanilha, avalição do modelo gerado
