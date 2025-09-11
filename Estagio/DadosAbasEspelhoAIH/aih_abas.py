@@ -2,14 +2,14 @@ import pandas as pd
 import re
 from collections import Counter
 
-CAMINHO_ARQUIVO_AIHS = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\DadosAbasEspelhoAIH\UnirAbas\abasAIH.xlsx"
+CAMINHO_ARQUIVO_AIHS = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\DadosAbasEspelhoAIH\UnirAbas\abasAIH2.xlsx"
 abas_aih = pd.read_excel(CAMINHO_ARQUIVO_AIHS, sheet_name=None, header=None, dtype=str)
 
 registros_extraidos = []
 CBO_ALVO = "225270"
 
 # Colunas para busca de CBO (F até AA = índices 5 a 26)
-COL_INICIO, COL_FIM = 5, 26
+COL_INICIO, COL_FIM = 5, 29
 
 # CNS
 CNS_MIN_LEN, CNS_MAX_LEN = 14, 15
