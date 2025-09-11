@@ -12,7 +12,7 @@ CBO_ALVO = "225270"
 COL_INICIO, COL_FIM = 5, 26
 
 # CNS
-CNS_MIN_LEN, CNS_MAX_LEN = 12, 15
+CNS_MIN_LEN, CNS_MAX_LEN = 14, 15
 
 aih_atual = None  # guarda o último AIH válido encontrado
 
