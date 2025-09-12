@@ -2,7 +2,7 @@ import pandas as pd
 import re
 from collections import Counter
 
-CAMINHO_ARQUIVO_AIHS = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\DadosAbasEspelhoAIH\UnirAbas\abasAIH2.xlsx"
+CAMINHO_ARQUIVO_AIHS = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\DadosAbasEspelhoAIH\UnirAbas\abasAIH7.xlsx"
 abas_aih = pd.read_excel(CAMINHO_ARQUIVO_AIHS, sheet_name=None, header=None, dtype=str)
 
 registros_extraidos = []
