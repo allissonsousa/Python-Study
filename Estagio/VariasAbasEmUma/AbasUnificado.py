@@ -3,10 +3,11 @@ Carregar um excel com varias abas, coletar os dados de todas as abas e unifica-l
 o cabeçalho"""
 
 import pandas as pd
+import os
 
 
 # Caminho do arquivo Excel
-arquivo = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\UniaoDeAbasUnificado\UnirAbas\NOME DO ARQUIVO.xlsx"
+arquivo = r"C:\Users\allisson.avila\Documents\GitHub\Python-Study\Estagio\VariasAbasEmUma\UnirAbas\ARQUIVO.xlsx"
 
 # Lê todas as abas (cada aba vira um DataFrame em um dicionário)
 todas_abas = pd.read_excel(arquivo, sheet_name=None)
